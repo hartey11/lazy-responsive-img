@@ -1,0 +1,24 @@
+.img-opt {
+  position: relative;
+
+  div > * {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.2s;
+    transition-timing-function: ease-out;
+
+    &[src=""] {
+      opacity: 0;
+    }
+  }
+}
